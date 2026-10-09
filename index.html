@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saiway Logistics | Truck Dispatching</title>
+<meta name="description" content="Professional USA truck dispatching, load search, rate negotiation and carrier support.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#14213a;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1150px;margin:auto}
+header{padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #e5eaf1}
+.logo{width:150px;height:85px;object-fit:contain}
+nav{display:flex;align-items:center;flex-wrap:wrap;gap:16px;font-size:13px;font-weight:bold}
+nav a:hover{color:#1677ff}
+.button{display:inline-block;background:#1677ff;color:#fff;padding:12px 18px;border:0;border-radius:5px;font-weight:bold;cursor:pointer}
+.top{background:#07152d;color:#fff;text-align:right;padding:9px 5%;font-size:14px}
+.top a{margin-left:15px}
+.hero{color:#fff;padding:95px 0;background:linear-gradient(90deg,#07152df2,#07152d80),url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80') center/cover}
+.small-title{color:#43a2ff;text-transform:uppercase;font-size:12px;font-weight:bold;letter-spacing:2px}
+h1{font-size:clamp(38px,6vw,65px);line-height:1.1;margin:14px 0}
+.hero p{max-width:650px;margin:18px 0 25px;font-size:18px}
+.outline{display:inline-block;border:1px solid #fff;padding:11px 17px;border-radius:5px;margin-left:8px}
+section{padding:65px 0}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.2;margin:8px 0 15px}
+.section-title{text-align:center;max-width:700px;margin:0 auto 35px}
+.section-title p,.muted{color:#667085}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:-25px;position:relative;background:#fff;padding:25px;border-radius:8px;box-shadow:0 8px 25px #07152d18;text-align:center}
+.stats strong{display:block;font-size:25px}
+.stats span{font-size:12px;color:#667085;font-weight:bold}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.photo{width:100%;height:350px;object-fit:cover;border-radius:8px}
+ul.checks{list-style:none;margin:18px 0}
+.checks li{margin:8px 0;font-weight:bold}
+.checks li:before{content:'✓';color:#1677ff;margin-right:10px}
+.light{background:#f5f8fc}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e5eaf1;padding:24px;border-radius:8px}
+.card h3{margin:8px 0;color:#07152d}
+.card p{font-size:14px;color:#667085}
+.icon{font-size:28px}
+.dark{background:#07152d;color:#fff}
+.dark .section-title p{color:#c2cddd}
+.dark .card{background:#102440;border-color:#263952}
+.dark .card h3{color:#fff}
+.dark .card p{color:#c2cddd}
+.trucks{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.truck{text-align:center;border:1px solid #e5eaf1;border-radius:8px;padding:20px 8px;font-weight:bold}
+.truck span{display:block;font-size:30px;margin-bottom:5px}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#07152d;color:#fff;padding:32px;border-radius:9px}
+.cta p{color:#d2deed}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-item{margin:17px 0}
+.contact-item strong{display:block;color:#1677ff;font-size:11px;letter-spacing:1px}
+.form{background:#fff;border:1px solid #e5eaf1;border-radius:8px;padding:25px;box-shadow:0 8px 25px #07152d0d}
+.form h3{font-size:22px;margin-bottom:15px}
+.form input,.form select,.form textarea{width:100%;padding:12px;margin-bottom:12px;border:1px solid #d7e0eb;border-radius:5px;font:inherit;font-size:14px}
+.form textarea{min-height:110px;resize:vertical}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form button{width:100%}
+footer{background:#040d1c;color:#fff;padding:35px 0 18px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px;padding-bottom:25px}
+footer p,footer li{font-size:13px;color:#9aabc0}
+footer ul{list-style:none}
+footer li{margin:6px 0}
+.bottom{border-top:1px solid #ffffff22;padding-top:15px;text-align:center;font-size:12px;color:#9aabc0}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:25px}
+@media(max-width:800px){header{flex-direction:column}.grid2,.contact{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.trucks{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.top{text-align:center;font-size:12px}.top a{margin:0 5px}nav{justify-content:center;gap:11px}.hero{padding:60px 0}.hero p{font-size:16px}section{padding:48px 0}.cards,.two,.footer-grid{grid-template-columns:1fr}.trucks{grid-template-columns:repeat(2,1fr)}.cta{flex-direction:column;align-items:flex-start}.photo{height:260px}}
+</style>
+</head>
+<body>
+<div class="top">
+<a href="mailto:info@saiwaylogistics.com">✉ info@saiwaylogistics.com</a>
+<a href="tel:+13073810579">☎ +1 (307) 381-0579</a>
+</div>
+<header>
+<a href="#home"><img class="logo" src="logo.png" alt="Saiway Logistics Logo"></a>
+<nav>
+<a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#why">WHY US</a>
+<a href="#equipment">EQUIPMENT</a><a href="#contact">CONTACT</a><a class="button" href="#contact">BECOME A CARRIER</a>
+</nav>
+</header>
+<section class="hero" id="home"><div class="container">
+<div class="small-title">Professional USA Truck Dispatching</div>
+<h1>Keep Your <span style="color:#43a2ff">Trucks Moving.</span></h1>
+<p>Reliable dispatch support for owner-operators and trucking companies — from finding loads to broker communication and paperwork.</p>
+<a class="button" href="#contact">GET STARTED →</a><a class="outline" href="tel:+13073810579">CALL SAIWAY</a>
+<p>✓ Carrier Focused &nbsp; ✓ Professional Support &nbsp; ✓ USA Service Area</p>
+</div></section>
+<div class="container"><div class="stats">
+<div><strong>24/7</strong><span>DISPATCH SUPPORT</span></div><div><strong>USA</strong><span>SERVICE AREA</span></div>
+<div><strong>Carrier</strong><span>FOCUSED SERVICE</span></div><div><strong>6+</strong><span>DISPATCH SERVICES</span></div>
+</div></div>
+<section id="about"><div class="container grid2">
+<img class="photo" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1000&q=80" alt="Truck on highway">
+<div><div class="small-title">About Saiway Logistics</div><h2>Your Partner <span style="color:#1677ff">On The Road</span></h2>
+<p class="muted">Saiway Logistics provides professional truck dispatching support for carriers and owner-operators across the United States. Our goal is to help carriers spend less time searching for loads and more time keeping trucks moving.</p>
+<ul class="checks"><li>Load Search & Booking</li><li>Rate Negotiation Support</li><li>Broker Communication</li><li>Route Planning</li><li>Dispatch & Paperwork Support</li></ul>
+<a class="button" href="#contact">WORK WITH US →</a></div>
+</div></section>
+<section class="light" id="services"><div class="container">
+<div class="section-title"><div class="small-title">What We Do</div><h2>Professional Dispatch Services</h2><p>Dispatch support designed to keep your operation organized and moving.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🔎</div><h3>Load Searching</h3><p>Find loads based on your equipment, preferred lanes and operation requirements.</p></div>
+<div class="card"><div class="icon">💰</div><h3>Rate Negotiation</h3><p>Professional broker communication and support with rate discussions.</p></div>
+<div class="card"><div class="icon">📍</div><h3>Route Planning</h3><p>Plan practical lanes and help reduce unnecessary deadhead miles.</p></div>
+<div class="card"><div class="icon">📞</div><h3>Broker Communication</h3><p>Coordinate with brokers and manage important load details.</p></div>
+<div class="card"><div class="icon">📋</div><h3>Paperwork Support</h3><p>Support with rate confirmations, load information and dispatch documents.</p></div>
+<div class="card"><div class="icon">⏱</div><h3>Dispatch Support</h3><p>Day-to-day support so you can focus on operating your truck.</p></div>
+</div></div></section>
+<section class="dark" id="why"><div class="container">
+<div class="section-title"><div class="small-title">Why Saiway</div><h2>Built Around Your Business</h2><p>Our approach is focused on communication, consistency and carrier support.</p></div>
+<div class="cards">
+<div class="card"><div class="small-title">01</div><h3>Carrier Focused</h3><p>Your equipment, lanes and requirements stay at the center of the dispatch process.</p></div>
+<div class="card"><div class="small-title">02</div><h3>Professional</h3><p>Clear and professional communication with brokers and carriers.</p></div>
+<div class="card"><div class="small-title">03</div><h3>Reliable</h3><p>Consistent dispatch support for your day-to-day trucking operation.</p></div>
+</div></div></section>
+<section id="equipment"><div class="container">
+<div class="section-title"><div class="small-title">Equipment</div><h2>Truck Types We Support</h2><p>Choose your equipment when you contact us.</p></div>
+<div class="trucks"><div class="truck"><span>🚛</span>Dry Van</div><div class="truck"><span>❄️</span>Reefer</div><div class="truck"><span>🚚</span>Flatbed</div><div class="truck"><span>📦</span>Box Truck</div><div class="truck"><span>🛻</span>Hotshot</div></div>
+</div></section>
+<section><div class="container cta"><div><h2>Ready To Keep Your Truck Moving?</h2><p>Tell us about your equipment and dispatch requirements.</p></div><a class="button" href="#contact">BECOME A CARRIER →</a></div></section>
+<section class="light" id="contact"><div class="container">
+<div class="section-title"><div class="small-title">Contact Us</div><h2>Let's Get Your Truck Moving</h2><p>Complete every field below to request a quote.</p></div>
+<div class="contact">
+<div><h2>Saiway Logistics</h2><p class="muted">Professional truck dispatching support for owner-operators and trucking companies across the United States.</p>
+<div class="contact-item"><strong>PHONE</strong><a href="tel:+13073810579">+1 (307) 381-0579</a></div>
+<div class="contact-item"><strong>WHATSAPP</strong><a href="https://wa.me/13073810579">+1 (307) 381-0579</a></div>
+<div class="contact-item"><strong>EMAIL</strong><a href="mailto:info@saiwaylogistics.com">info@saiwaylogistics.com</a></div>
+<div class="contact-item"><strong>SERVICE AREA</strong>United States</div>
+</div>
+<form class="form" action="https://formsubmit.co/info@saiwaylogistics.com" method="POST">
+<input type="hidden" name="_subject" value="New Inquiry - Saiway Logistics Website">
+<input type="hidden" name="_template" value="table">
+<h3>Request A Free Quote</h3>
+<div class="two"><input name="Full Name" type="text" placeholder="Full Name" required><input name="Phone Number" type="tel" placeholder="Phone Number" required></div>
+<input name="Email Address" type="email" placeholder="Email Address" required>
+<div class="two"><select name="Truck Type" required><option value="">Select Truck Type</option><option>Dry Van</option><option>Reefer</option><option>Flatbed</option><option>Box Truck</option><option>Hotshot</option><option>Other</option></select>
+<select name="Service Required" required><option value="">Select Service</option><option>Full Dispatch Service</option><option>Load Search</option><option>Rate Negotiation</option><option>Broker Communication</option><option>Route Planning</option><option>Other</option></select></div>
+<textarea name="Message" placeholder="Tell us about your truck, lanes or dispatch requirements..." required></textarea>
+<button class="button" type="submit">REQUEST FREE QUOTE →</button>
+</form></div></div></section>
+<footer><div class="container"><div class="footer-grid">
+<div><img class="logo" src="logo.png" alt="Saiway Logistics Logo"><p>Professional truck dispatching and logistics support helping carriers stay organized and moving.</p></div>
+<div><h4>QUICK LINKS</h4><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>CONTACT</h4><ul><li><a href="tel:+13073810579">+1 (307) 381-0579</a></li><li><a href="mailto:info@saiwaylogistics.com">info@saiwaylogistics.com</a></li><li>United States</li></ul></div>
+</div><div class="bottom">© 2026 Saiway Logistics. All Rights Reserved.</div></div></footer>
+<a class="whatsapp" href="https://wa.me/13073810579" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
+</body></html>
