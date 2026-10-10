@@ -11,7 +11,13 @@ body{font-family:Arial,sans-serif;color:#14213a;line-height:1.6}
 a{text-decoration:none;color:inherit}
 .container{width:90%;max-width:1150px;margin:auto}
 header{padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #e5eaf1}
-.logo{width:150px;height:85px;object-fit:contain}
+.brand{display:flex;align-items:center;gap:13px;flex-shrink:0}
+.logo{width:105px;height:85px;object-fit:contain;display:block}
+.brand-name{font-family:Georgia,'Times New Roman',serif;font-size:25px;line-height:1.1;font-weight:800;letter-spacing:1.4px;color:#07152d;white-space:nowrap;text-transform:uppercase}
+.brand-name span{display:block;color:#1677ff;font-family:Arial,sans-serif;font-size:10px;letter-spacing:3px;margin-top:6px;font-weight:700}
+footer .logo{width:95px;height:85px}
+footer .brand-name{color:#fff;font-size:22px}
+footer .brand-name span{color:#43a2ff}
 nav{display:flex;align-items:center;flex-wrap:wrap;gap:16px;font-size:13px;font-weight:bold}
 nav a:hover{color:#1677ff}
 .button{display:inline-block;background:#1677ff;color:#fff;padding:12px 18px;border:0;border-radius:5px;font-weight:bold;cursor:pointer}
@@ -66,8 +72,8 @@ footer ul{list-style:none}
 footer li{margin:6px 0}
 .bottom{border-top:1px solid #ffffff22;padding-top:15px;text-align:center;font-size:12px;color:#9aabc0}
 .whatsapp{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:25px}
-@media(max-width:800px){header{flex-direction:column}.grid2,.contact{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.trucks{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.top{text-align:center;font-size:12px}.top a{margin:0 5px}nav{justify-content:center;gap:11px}.hero{padding:60px 0}.hero p{font-size:16px}section{padding:48px 0}.cards,.two,.footer-grid{grid-template-columns:1fr}.trucks{grid-template-columns:repeat(2,1fr)}.cta{flex-direction:column;align-items:flex-start}.photo{height:260px}}
+@media(max-width:800px){header{flex-direction:column}.brand{justify-content:center}.brand-name{font-size:22px}.grid2,.contact{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.trucks{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.brand{gap:8px}.logo{width:82px;height:72px}.brand-name{font-size:19px;letter-spacing:1px}.brand-name span{font-size:9px;letter-spacing:2px}footer .brand-name{font-size:18px}.top{text-align:center;font-size:12px}.top a{margin:0 5px}nav{justify-content:center;gap:11px}.hero{padding:60px 0}.hero p{font-size:16px}section{padding:48px 0}.cards,.two,.footer-grid{grid-template-columns:1fr}.trucks{grid-template-columns:repeat(2,1fr)}.cta{flex-direction:column;align-items:flex-start}.photo{height:260px}}
 </style>
 </head>
 <body>
@@ -76,7 +82,7 @@ footer li{margin:6px 0}
 <a href="tel:+13073810579">☎ +1 (307) 381-0579</a>
 </div>
 <header>
-<a href="#home"><img class="logo" src="images/logo.png" alt="Saiway Logistics Logo"></a>
+<a href="#home" class="brand"><img class="logo" src="images/logo.png" alt="Saiway Logistics Logo"><span class="brand-name">SAIWAY LOGISTICS<span>TRUCK DISPATCHING</span></span></a>
 <nav>
 <a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#why">WHY US</a>
 <a href="#equipment">EQUIPMENT</a><a href="#contact">CONTACT</a><a class="button" href="#contact">BECOME A CARRIER</a>
@@ -143,7 +149,7 @@ footer li{margin:6px 0}
 <button class="button" type="submit">REQUEST FREE QUOTE →</button>
 </form></div></div></section>
 <footer><div class="container"><div class="footer-grid">
-<div><img class="logo" src="images/logo.png" alt="Saiway Logistics Logo"><p>Professional truck dispatching and logistics support helping carriers stay organized and moving.</p></div>
+<div><div class="brand"><img class="logo" src="images/logo.png" alt="Saiway Logistics Logo"><span class="brand-name">SAIWAY LOGISTICS<span>TRUCK DISPATCHING</span></span></div><p>Professional truck dispatching and logistics support helping carriers stay organized and moving.</p></div>
 <div><h4>QUICK LINKS</h4><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#why">Why Us</a></li><li><a href="#contact">Contact</a></li></ul></div>
 <div><h4>CONTACT</h4><ul><li><a href="tel:+13073810579">+1 (307) 381-0579</a></li><li><a href="mailto:info@saiwaylogistics.com">info@saiwaylogistics.com</a></li><li>United States</li></ul></div>
 </div><div class="bottom">© 2026 Saiway Logistics. All Rights Reserved.</div></div></footer>
